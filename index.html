@@ -4,132 +4,233 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eric DiMarzio</title>
+    <script src="https://kit.fontawesome.com/5318705810.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <nav class="navbar">
-      <div class="brand-title">Eric DiMarzio</div>
-      <a href="#" class="toggle-button">
+      <div class="brand-title">
+        <button class="btn--text" id="nav-logo">Eric DiMarzio</button>
+      </div>
+      <!-- <div class="music-player-container">
+        <audio
+          class="music-player"
+          src="tracks/the-seed-that-falls-on-good-ground-PREVIEW.mp3"
+          controls
+        >
+          <p>Your browser does not support our audio player.</p>
+        </audio>
+      </div> -->
+      <a class="toggle-button">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </a>
       <div class="navbar-links">
         <ul>
-          <li><a href="#" class="nav-link">Products</a></li>
-          <li><a href="#" class="nav-link">Mass Settings</a></li>
-          <li><a href="#" class="nav-link">Worship Songs</a></li>
-          <li><a href="#" class="nav-link">Contact</a></li>
-          <li><a href="#" class="nav-link">More About Eric</a></li>
-          <li><a href="#" class="nav-link shop-btn">Shop Now</a></li>
+          <li><a class="nav-link" id="section--1--link">About</a></li>
+          <li><a class="nav-link" id="section--2--link">Compositions</a></li>
+          <li><a class="nav-link" id="section--3--link">Why CCW?</a></li>
+          <li><a class="nav-link" id="section--4--link">Services</a></li>
+          <li><a class="nav-link" id="section--5--link">Contact</a></li>
+          <li>
+            <a
+              href="https://payhip.com/ericdimarzio" target="_blank"
+              class="nav-link shop-btn rounded" id="nav-shop-btn"
+              >Shop Now</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
+
     <div class="header">
+      <div id="header-overlay"></div>
       <div class="header-container">
         <div class="header-title"><h1>Contemporary Catholic Worship</h1></div>
         <div class="header-tagline">
           <h3>
-            Invigorate your service with accessible, modern music which captures
-            both the jubilation and reverance of Catholic worship.
+            Invigorate your service with accessible, modern worship music.
           </h3>
-        </div>
-      </div>
-      <div id="learn-more">
-        <h3>Learn More</h3>
-        <div class="icon-container">
-          <img class="icon" src="images/icons/white-arrow.png" />
+          <button class="btn--text" id="learn-more">
+            Learn more &DownArrow;
+          </button>
         </div>
       </div>
     </div>
-    <div class="section-header" id="liturgical-resources">
-      <h2>Liturgical Resources</h2>
+    <div class="section" id="section--1">
+      <h2 class="section-header">Hi, I'm Eric.</h2>
+      <div class="about">
+        <img
+          class="img-portrait rounded"
+          id="portrait-quito"
+          src="images/portrait-quito-color.jpg"
+          alt="Eric Portrait"
+        />
+        <p class="about-content">
+          I'm a composer, educator, web developer, and worship leader. I'm the
+          Director of Contemporary Worship at St. Theresa Catholic Church, and
+          since 2019 I've been writing liturgical music to fill what I saw as a
+          gap in the resources available to Catholic musicians. Putting the
+          label "contemporary" aside, I've written over 100 diverse pieces which
+          I believe can enrich your Mass and empower your congregation to
+          participate fully in the sacrament.
+        </p>
+      </div>
+      <div class="about" id="about-2">
+        <img
+          class="img-portrait rounded"
+          id="portrait-cliffs"
+          src="images/portrait-cliffs-color.jpg"
+          alt="Cliffs of Mohr"
+        />
+        <p class="about-content">
+          I live in Houston, Texas with my fiancé Stephanie and our dog Bella. I
+          grew up in North Carolina, received degrees in Music and Education at
+          the University of North Carolina at Chapel Hill, and moved to Houston in
+          2015. When I'm not composing or performing, I enjoy playing
+          basketball, spending time in nature, and traveling. I've visited 20
+          countries and more than half of the U.S. National Parks.<br /><br />I'm
+          passionate about music, teaching, and making a positive
+          difference in the world. I hope my music connects with you and may God
+          bless you and your community.
+        </p>
+      </div>
     </div>
-    <div class="section">
+
+    <div class="section" id="section--2">
+      <div id="compositions">
+        <h2 class="section-header">Compositions</h2>
+        <div class="composition rounded-body inner-spacer" >
+          <a href="https://payhip.com/b/0AyVf" target="_blank">
+          <div class="composition-header" id="mass-settings">
+            <h3>Mass Settings</h3>
+            <audio
+              class="music-player"
+              src="tracks/Mass of Abundant Love - Lamb of God.mp3"
+              controls>
+          </div></a>
+          <div class="composition-body"><p>
+            The Mass of Abundant Love is a contemporary mass setting which
+            captures the jubilation and reverence of Catholic worship.
+            Appropriate for Ordinary Time, Christmas, and Easter seasons; the
+            Mass of Abundant Love is a singable, powerful expression of the
+            joy and mystery of the Mass.
+          </p></div>
+        </div>
+        <div class="composition rounded-body inner-spacer">
+          <a href="https://payhip.com/ericdimarzio" target="_blank">
+          <div class="composition-header"  id="psalms">
+            <h3>Responsorial Psalms</h3>
+            <audio
+              class="music-player"
+              src="tracks/the-seed-that-falls-on-good-ground-PREVIEW.mp3"
+              controls>
+          </div></a>
+          <div class="composition-body"> <p>
+            This was my first goal as a Catholic composer. To create
+            responsorial psalms that were singable, powerful, and faithful to
+            the text. Each one has been used in my own service and I'm proud
+            to say our congregation sings these as loud as any song or hymn we
+            use.
+          </p>
+          <p>
+            The verses are written to meaningfully convey the message of the
+            text while still remaining simple enough for a cantor to learn
+            week to week. The melody is consistent between verses, and the
+            range is accessible for all singers.
+          </p>
+          <p>
+            I've written a responsorial psalm for nearly every Sunday in the
+            three year cycle as well as select pieces for weddings and
+            funerals. If you don't see the one you need, reach out and I
+            probably have a copy I can send.
+          </p></div>
+        </div>
+        <div class="composition rounded-body " >
+          <a href="https://payhip.com/ericdimarzio" target="_blank">
+          <div class="composition-header" id="worship-songs">
+            <h3>Worship Songs</h3>
+            <audio
+              class="music-player"
+              src="tracks/The-Battle-Is-Won-Eric-DiMarzio.mp3"
+              controls>
+          </div></a>
+          <div class="composition-body"><p>
+            |The Battle Is Won| <br /><br />
+            Suitable for the conclusion of mass, this lively call to action
+            declares, "You were made by the Father / You were saved by the Son
+            / You are filled with the Spirit; now go and declare that the
+            battle is won!"
+            <br /><br />
+            |Hungry|
+            <br /><br />
+            Scripture tells us that what we do for the least among us we do
+            for Christ. This moving folk ballad captures that sentiment and
+            challenges us to be Christ's love in our world.
+            <br /><br />
+            |Victory|
+            <br /><br />
+            A meditative hymn reminding us that our strength - our resilience
+            - is from God.
+          </p></div>
+        </div>
+      </div>
+    </div>
+
+   
+    <!-- <div class="section">
+      <h2>Accordion</h2>
       <div class="products">
-        <div class="product product-1">
+        <div class="product" id="mass-settings">
           <div class="product-header">
             <h3>Mass Settings</h3>
             <button class="product-button">ᐱ</button>
           </div>
           <div class="product-body">
             <p>
-              A contemporary mass setting which captures the jubilation and
-              reverance of Catholic worship. Appropriate for Ordinary Time,
-              Christmas, and Easter seasons; the Mass of Abundant Love is a
-              singable, powerful expression of the joy and mystery of the Mass.
-            </p>
+              The Mass of Abundant Love 
           </div>
         </div>
-        <div class="product product-2">
+        <div class="product" id="psalms">
           <div class="product-header">
-            <h3>Responsorial Psalms</h3>
+            <h2>Responsorial Psalms</h2>
             <button class="product-button">ᐱ</button>
           </div>
           <div class="product-body">
             <p>
-              This was my first goal as a Catholic composer. To create
-              responsorial psalms that were singable, powerful, and faithful to
-              the text. Each one has been used in my own service and I'm proud
-              to say our congregation sings these as loud as any song or hymn we
-              use. <br /><br />
-              The verses are written to meaningfully convey the message of the
-              text while still remaining simple enough for a cantor to learn
-              week to week. The melody is consistent between verses, and the
-              range is accessible for all singers.
-              <br /><br />
-              I've written a responsorial psalm for nearly every Sunday in the
-              three year cycle as well as select pieces for weddings and
-              funerals. If you don't see the one you need, reach out and I
-              probably have a copy I can send.
+              This was my 
             </p>
           </div>
         </div>
-        <div class="product product-3">
+        <div class="product" id="songs">
           <div class="product-header">
             <h3>Contemporary Worship Songs</h3>
             <button class="product-button">ᐱ</button>
           </div>
           <div class="product-body">
-            <p>
-              |The Battle Is Won| <br /><br />
-              Suitable for the conclusion of mass, this lively call to action
-              declares, "You were made by the Father / You were saved by the Son
-              / You are filled with the Spirit; now go and declare that the
-              battle is won!"
-              <br /><br />
-              |Hungry|
-              <br /><br />
-              Scripture tells us that what we do for the least among us we do
-              for Christ. This moving folk ballad captures that sentiment and
-              challenges us to be Christ's love in our world,
-              <br /><br />
-              |Victory|
-              <br /><br />
-              A meditative hymn reminding us that our strength - our resilience
-              - is from God.
-            </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="section-header"><h2>What makes my music unique?</h2></div>
-    <div class="section">
+    </div> -->
+    <div class="section" id="section--3">
+      <h2 class="section-header">What makes my music unique?</h2>
       <div class="qualities">
-        <div class="card">
+        <div class="card rounded">
           <div class="icon-container">
             <img class="icon" src="images/icons/001-group.png" alt="group" />
           </div>
           <div class="card-text">
             <h3>Accessible</h3>
             <p>
-              Melodies that are designed with the congregation in mind. They are
-              the voice of the Church, and they deserve melodies that are simple
-              to learn, fun to sing, and easy to remember.
+              My number one goal is to make music that engages parishioners.
+              Here you'll find melodies that empower each member to be fully
+              present in worship. Music that is simple to learn, fun to sing,
+              and easy to remember.
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card rounded">
           <div class="icon-container">
             <img
               class="icon"
@@ -140,13 +241,16 @@
           <div class="card-text">
             <h3>Musical</h3>
             <p>
-              While remaining accessible for the congregation, the harmony lines
-              and accompaniment give a worship group or pianist the freedom to
-              be tight, exciting, evocative... idk
+              Whether your group is a full choir, worship band, or solo piano;
+              each piece is scalable to your needs. Vocal harmonies and diverse
+              styles give you the opportunity to make each song as simple or
+              complex as you and your group desire.
             </p>
           </div>
         </div>
-        <div class="card">
+        </div>
+        <div class="qualities">
+        <div class="card rounded">
           <div class="icon-container">
             <img
               class="icon"
@@ -164,56 +268,88 @@
             </p>
           </div>
         </div>
-        <div class="card">
+        <div class="card rounded">
           <div class="icon-container">
             <img class="icon" src="images/icons/012-heart-1.png" alt="group" />
           </div>
           <div class="card-text">
             <h3>Personal</h3>
             <p>
-              Every one of these pieces has been used in my own service. Every
-              piece at its own time was written for "this Sunday".
+              I strive for every piece to be easily integrated into your
+              worship. However, if you don't find what you're looking for, or
+              want a piece transposed to a different key, please reach out and
+              let me know how I can help.
             </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="about">
-        <img
-          class="img-portrait"
-          src="images/eric-red-cropped.jpg"
-          alt="Eric Portrait"
-        />
-        <p class="about-content">
-          <span><h2>Hi, I'm Eric.</h2></span> I live in Houston, Texas with my
-          fiance Stephanie and our dog Bella. I grew up in North Carolina,
-          studied music at the University of North Carolina at Chapel Hill, and
-          moved to Texas in 2015.<br /><br />When I'm not composing or
-          performing, I enjoy playing basketball, spending time in nature, and
-          traveling. I've visited 20 countries and more than half of the U.S.
-          National Parks.<br /><br />I'm passionate about music, teaching
-          others, and making a positive difference in the world. I hope you find
-          something that enriches your service. Thank you for visiting.
-        </p>
-      </div>
-    </div>
-    <div class="section">
-      <div class="shop-now">
-        <div class="column-1"><h1>Shop Now!</h1></div>
-        <div class="column-2">I will put a carousel here.</div>
-      </div>
-    </div>
-    <div class="section-header"><h2>Contact</h2></div>
 
+    <div class="section" id="section--4">
+      <h2 class="section-header">Services</h2>
+      <div class="services">
+<h3>I'm available in the Houston area for:
+  <ul>
+    <li><p>Cantor or Worship Leader for Wedding/Funeral/Special Occasion</p></li>
+  <li><p>
+    School or Church related clinician, consultation, or presenter
+  </p></li>
+<li><p>Speaker or Worship Leader for retreats</p></li></ul>
+<p>I'm also available for commissions. If you have an important event coming up - a wedding, a church dedication, an eagle scout ceremony - consider commissioning a psalm, meditation hymn, or choral work. Mark the occassion with music that is unique to your community.</p>
+</h3>
+        </div>
+      </div>
+
+      <div class="section" id="section--5">
+        <!-- <h2 class="section-header">Contact Me</h2> -->
+
+          <!-- <form action="results.html" method="GET">
+            <div><label>Name</label>
+            <input name="Name"></div>
+            <div>
+            <label>Email</label>
+            <input name="Email">
+          </div>
+          <div>
+            <label>Phone Number</label>
+            <input name="Phone">
+          </div>
+          <div>
+            <label>Message</label>
+            <input name="Message">
+          </div>
+            <button>Submit</button>
+          </form> -->
+
+          <iframe id="contact-form" src="https://docs.google.com/forms/d/e/1FAIpQLSd5CY5AJf9_NgP8xXCWqd5VXtdSA4NepTXwEbJ_-NP4QqvyBw/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
+
+
+      </div>
+
+    <div class="section">
+      <div class="shop-now rounded">
+      <a href="https://payhip.com/EricDiMarzio" target="_blank"><h1>Shop Now!</h1></a>
+    </div>
+</div>
     <div class="footer">
-      <a href="https://www.flaticon.com/" title="people icons"
-        >Icons created by Freepik - Flaticon</a
+      <div class="social-icon-container">
+      <a href="https://facebook.com/EricDiMarzio" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+      <a href="https://www.youtube.com/@EricDiMarzioMusic" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+      <a href="https://www.linkedin.com/in/ericdimarzio/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+      <a href="https://github.com/EricDiMarzio" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a>
+    </div>
+    <div class="footer-attribute-container">
+      <a href="https://www.flaticon.com/" target="_blank" title="people icons"
+        >Color Icons created by Freepik - Flaticon</a
       >
+      <a href="https://fontawesome.com/" target="_blank" title="social icons">Social Icons courtesy of Font Awesome</a>
       <a
-        href="https://www.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_4326138.htm#query=white%20abstract&position=3&from_view=search&track=ais"
-        >Image by lifeforstock on Freepik</a
+        href="https://www.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_4326138.htm#query=white%20abstract&position=3&from_view=search&track=ais" target="_blank"
+        >Background Image by lifeforstock on Freepik</a
       >
+      </div>
     </div>
     <script src="script.js" type="text/javascript"></script>
   </body>
