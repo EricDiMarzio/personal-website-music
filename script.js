@@ -19,6 +19,7 @@ const section5 = document.getElementById('section--5');
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
+  console.log('clicked');
 });
 
 //Scroll links//
