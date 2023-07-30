@@ -267,7 +267,7 @@ p {
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(4rem);
 }
 
 .section-header {
@@ -611,10 +611,10 @@ p {
     font-size: 1.4rem;
   }
 
-  .section--hidden {
+  /* .section--hidden {
     opacity: 0;
     transform: translateY(5rem);
-  }
+  } */
 
   #portrait-cliffs {
     float: none;
