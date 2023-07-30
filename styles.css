@@ -23,6 +23,12 @@ body {
   background-position: bottom center;
 }
 
+.site-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   font-size: 5.8rem;
   font-family: 'Lora', 'Barlow';
@@ -138,10 +144,11 @@ p {
   color: white;
   padding: 1rem;
   display: block;
+  transition: all 0.4s;
 }
 
 .navbar-links li a:hover {
-  translate: 0 -1.8px;
+  /* translate: 0 -1.8px; */
   cursor: pointer;
 }
 
@@ -246,14 +253,21 @@ p {
   color: rgb(59, 59, 59);
   display: flex;
   /* justify-content: center; */
-  padding-top: 100px;
+  margin-top: 24px;
+  padding-top: 108px;
   flex-direction: column;
   align-items: center;
   max-width: 1000px;
-  position: relative;
+  /* position: relative;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   padding: 0 2em;
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .section-header {
@@ -262,10 +276,9 @@ p {
 
 /* About */
 
-.about {
+/* .about {
   max-width: 1000px;
-  position: relative;
-}
+} */
 
 /* Compositions */
 
@@ -596,6 +609,11 @@ p {
   }
   h3 {
     font-size: 1.4rem;
+  }
+
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(5rem);
   }
 
   #portrait-cliffs {
