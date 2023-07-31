@@ -11,7 +11,11 @@ const section1 = document.getElementById('section--1');
 
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
-  console.log('clicked');
+});
+document.addEventListener('click', function (e) {
+  if (!e.target === nav || !nav.contains(e.target)) {
+    navbarLinks.classList.remove('active');
+  }
 });
 //Navbar
 
